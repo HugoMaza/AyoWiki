@@ -16,7 +16,7 @@ Easy to use Wiki
 - - Really, you don't need install any complex programming languages or rare libraries.
 - - And just copy and paste in your server and start to document.
 
-AyuWiki has an easy to use wiki editor:
+AyoWiki has an easy to use wiki editor:
 
 ![AyoWiki Wiki editor](https://ayowiki.org/wiki/db/Image/Ayowikiscrsh1.png "AyoWiki Wiki-editor")
 
