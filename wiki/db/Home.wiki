@@ -1,0 +1,33 @@
+__NOTOC__
+
+===Welcome to AyoWiki!===
+
+[[Image:Gplv3.png|right]]
+
+'''AyoWiki''' is a Web-Based Open-Source wiki software application.
+
+Originally developed to serve the needs of servers with minimal system requirements, including No use of database.
+
+AyoWiki is written in the [https://metacpan.org Perl programming language].
+
+AyoWiki  is distributed under the terms of the [https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License]. 
+
+<!--EDITABLESECTION1-->
+AyoWiki is Free to use software.
+
+Make sure you check out all the pages in the left menu column. Information about [[Special:Users]] account page and the [[Special:Groups]] and [[Special:Namespaces]] permission system is right inside the wiki page itself, as everything is a wiki page.  The [[Help]] page shows all the formatting features.
+
+You can play in the [[Sandbox:Home]] or read the [[Help]].
+<!--EDITABLESECTION1-->
+
+You can log in as "admin" with the default password of "admin" or you can log in as User "joe" with a default password of "joe".
+
+<center>
+[[Image:logo1.png]]
+</center>
+
+----
+<center>
+[[About]]
+</center>
+----

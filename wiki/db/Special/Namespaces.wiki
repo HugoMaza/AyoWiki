@@ -1,0 +1,15 @@
+__NOTOC__
+===Special:Namespaces===
+
+This is the actual Namespaces page. Namespace protection takes the opposite strategy as groups. Groups use tags which the user puts on individual pages. Namespace protection on the other hand, defines a list of users which are allowed to edit within the entire namespace. Therefore, with this scheme, no tags are necessary - but it applies to the whole namespace.  Group tags do have precedent over the namespaces protection, so you can further restrict protected namespace pages to a specific group.  So even if you are a member of a namespace , you may be denied if a page specifies a group you are not a member of. 
+
+If the namespace is not listed on this page then there is no restriction by this protection scheme. Note that the 'Special' and 'Skin' namespace should always be restricted here.
+
+The ability to Upload is governed by namespace protection. The user will only see the namespaces they have access to in the drop down list of the upload form.
+
+Namespaces are single lines that start with a bullet and are delimited by one colon with commas between users. You should always have the admin part of every namespace defined otherwise the admin won't be able to edit pages in that namespace.
+
+*Special: admin
+*Skin: admin
+*old: admin
+

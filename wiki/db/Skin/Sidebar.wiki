@@ -1,0 +1,17 @@
+__NOTOC__
+=====Menu=====
+*[[Home]]
+*[[About]]
+*[[Help]]
+*[[Sandbox:Home]]
+*[[GPL|License]]
+*[[Versions]]
+  
+=====Special=====
+*[[Special:Users]]
+*[[Special:Groups]]
+*[[Special:Namespaces]]
+*[[Skin:Sidebar]]
+
+=====Other=====
+*[http://www.google.com WWW Search]

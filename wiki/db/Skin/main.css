@@ -1,0 +1,542 @@
+/**********************************************************************************
+*    AyoWiki - A full featured wiki that uses minimal system resources.
+*    Copyright (C) 2020 https://github.com/HugoMaza/AyoWiki
+*    
+*    AyoWiki was initially based on https://sourceforge.net/projects/wikilean/
+*
+*    This program is free software: you can redistribute it and/or modify
+*    it under the terms of the GNU General Public License as published by
+*    the Free Software Foundation, either version 3 of the License, or
+*    (at your option) any later version.
+*
+*    This program is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU General Public License for more details.
+*
+*    You should have received a copy of the GNU General Public License
+*    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+***********************************************************************************/
+/* THIS IS THE DEFAULT SKIN */
+/* border-style:none,dashed,dotted,solid,inset,outset,groove */
+
+/*background: #fff3eb; */
+
+body {
+    font: x-small sans-serif;
+    margin:0px 0px 0px 0px;    /*top,right,bottom,left*/
+    background: #F6F6F6;    /*url(headbg.jpg) 0 0 no-repeat*/
+    font-weight:normal;
+    font-size: 100%;   /*10pt*/
+    color: #282828;
+    min-width: 100%;
+}
+
+
+ul,li,ol,dl,dd {
+    margin: 0px 0px 5px 15px;    /*top,right,bottom,left*/
+    padding: 0;
+    font-size:  100%;   /*10pt*/
+    font-weight:normal;
+    line-height: 1.5em;
+    list-style-type: none;
+    /*list-style-type: square;
+    list-style-image: url('minidot.gif');*/
+}
+
+
+p,br {
+    line-height: 1.4em;
+    margin:10px 0px 0px 10px;    /*top,right,bottom,left*/
+    padding:0px 0px 0px 0px;   /*top,right,bottom,left*/
+    font-weight:normal;
+    font-size:  100%;   /*10pt*/
+    color: #282828;
+}
+
+b   {
+    font-weight:bold;
+    font-size:  100%;   /*10pt*/
+    color: #282828;
+}
+
+i   {
+    font-weight:normal;
+    font-size:  100%;   /*10pt*/
+    color: #282828;
+}
+
+h1 {
+    margin:0px 0px 0px 0px;    /*top,right,bottom,left*/
+    padding: 10px 0px 0px 0px;   /*top,right,bottom,left*/
+    color: #282828;
+    font-weight: normal;
+    font-size:  20pt;
+    font-family:times;
+    border-bottom: 2px #BFBFBF solid;
+}
+
+h2 {
+    margin:0px 0px 0px 0px;    /*top,right,bottom,left*/
+    padding: 10px 0px 0px 0px;   /*top,right,bottom,left*/
+    color: #282828;
+    font-weight:normal;
+    font-size:  17pt;
+    font-family:arial;
+    border-bottom: 1px #AAA solid;
+}
+
+h3 {
+    margin:0px 0px 0px 10px;    /*top,right,bottom,left*/
+    padding: 10px 0px 0px 0px;   /*top,right,bottom,left*/
+    color: #282828;
+    font-weight:normal;
+    font-size:  15pt;
+    font-family:arial;
+    border-bottom: 1px #999 dashed;
+}
+h4 {
+    margin:20px 0px 0px 10px;    /*top,right,bottom,left*/
+    padding: 8px 0px 0px 0px;   /*top,right,bottom,left*/
+    font-weight:normal;
+    color: #232323;
+    font-size:  14pt;
+    font-family:arial;
+}
+
+h5 {
+    margin:0px 0px 0px 10px;    /*top,right,bottom,left*/
+    padding: 8px 1px 1px 1px;   /*top,right,bottom,left*/
+    font-weight:bold;
+    font-style: normal;
+    font-size:  12pt;
+    color:  #232323;
+    font-family:arial;
+}
+
+
+pre {
+    margin: 10px 30px 10px 30px;    /*top,right,bottom,left*/
+    padding: 10px;    /*top,right,bottom,left*/
+    font-weight:normal;
+    font-size:  100%;
+    color:  #282828;
+    background-color: F8F8F8;
+    border: 1px dashed #1E90FF;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+hr  {
+height: 1px;
+color: #aaa;
+background-color: #aaa;
+border: 0;
+margin: .2em 0 .2em 0;
+}
+
+
+img  {
+border-style: none;
+border-width:1px;
+border-color:#ddd;
+margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
+padding: 0px 0px 0px 0px;/*top,right,bottom,left*/
+
+}
+
+#lockimage  {
+border-style: none;
+float: right;
+margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
+padding: 0px 0px 0px 0px;/*top,right,bottom,left*/
+}
+
+/* Conditional override style
+ * if lockimage is within sidebar turn off display.
+ */
+#sidebar #lockimage  {
+display:none;
+}
+
+/*-----------------------*/
+a {
+text-decoration: none;
+color: #0d64ef;
+}
+
+a:link {
+    color: #0645AD;
+}
+
+a:visited {
+    color: #0645AD;
+}
+
+a:hover {
+    color: #0645AD;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0645AD;
+    /*background-color: transparent;*/
+}
+
+/*
+ * IE6 seems to have a bug with the below css. It only places the image on the 
+ * FIRST link in a paragraph. If links are in separate paragraphs then its ok.
+ * Renders perfectly in Firefox.
+ */
+
+a.external {
+  background: url(external.png) center right no-repeat;
+  padding-right: 13px;
+}
+
+/*
+a.internal {
+  background: url(file.gif) center right no-repeat;
+  padding-right: 15px;
+}
+*/
+
+a.mail {
+  background: url(mail.gif) center right no-repeat;
+  padding-right: 18px;
+}
+
+a.file {
+  background: url(file.gif) center right no-repeat;
+  padding-right: 18px;
+}
+
+
+a.editsection {
+  /*border: 1px #0d64ef dotted;*/
+  float: right;
+  margin: 0px 0px 0px 0px; /*top,right,bottom,left*/
+  padding: 0px 5px 0px 5px; /*top,right,bottom,left*/
+}
+
+div.editsection  {
+  margin:10px 0px 10px 0px;    /*top,right,bottom,left*/
+  padding:2px 5px 2px 5px;    /*top,right,bottom,left*/
+  background: #ffffcc;
+  border: 1px #ffffcc dotted;
+}
+
+/*-----------------------*/
+/* Conditional override styles
+ * a links and h5's which are within the 'sidebar' TD element have their styles changed here.
+ */
+
+#sidebar ul,#sidebar li {
+    margin: -6px 0px -6px 0px;    /*top,right,bottom,left*/
+    padding: 0;
+}
+
+#sidebar a, #sidebar h5 
+{
+    font-weight:normal;
+    font-family:sans-serif;
+    font-size: 10pt;   /*10pt*/
+    color:  #4D4D4D;
+    text-decoration: none;
+}
+
+#sidebar a:link,#sidebar a:visited,#sidebar a:active {
+    font-size: 9pt;   /*10pt*/
+    color: #0645AD;
+}
+
+#sidebar a:hover {
+    text-decoration:underline;
+}
+
+#sidebar h5 
+{
+    margin: 0px 0px 10px 0px;   /*top,right,bottom,left*/
+    font-weight:bold;
+    color:  #282828;
+    background-color: 0e74c0;
+    font-family:arial;
+    font-style:normal;  /* override italic */
+    text-align: center
+}
+
+
+
+/*--------SESSION MENU---------------*/
+div.smenu  {
+    margin:0px 0px 10px 0px;    /*top,right,bottom,left*/
+    padding: 8px 5px 6px 5px;    /*top,right,bottom,left*/
+    background: #ffffff;
+    border-bottom: 1px solid #A8DFF0;
+    text-align: right;
+    background-image: linear-gradient(to top, #E8F2F8, #FFFFFF);
+    border-left: 1px solid #D1E6F3;
+    border-right: 1px solid #D1E6F3;
+}
+a.smenu{
+    margin: 0px 0px 0px 0px;  /*top,right,bottom,left*/
+    font-family:tahoma, arial, sans-serif;
+    font-size:  10pt;
+    font-weight:normal;
+    color:  #0645AD;
+    text-decoration: none;
+    padding: 0 8px 0 10px;
+    border-left: 1px solid #D1E6F3;
+}
+a.smenu:hover {
+    margin: 0px 0px 0px 0px;  /*top,right,bottom,left*/
+    font-family:tahoma, arial, sans-serif;
+    font-size:  10pt;
+    font-weight:normal;
+    color:  #0645AD;
+    text-decoration:underline;
+}
+
+/*-----------------------*/
+div.collapsibleheader{
+    width:100px;
+    margin:10px 10px 0px 10px;    /*top,right,bottom,left*/
+    padding:2px 5px 2px 5px;    /*top,right,bottom,left*/
+    background: #f0f0f0;
+    border: 1px #555 outset;
+    font-weight:normal;
+    font-size:  10pt;
+    color: #282828;
+    font-family:arial;
+    text-align: center;
+}
+div.collapsiblebody  {
+margin:0px 10px 10px 10px;    /*top,right,bottom,left*/
+padding:10px 10px 10px 10px;    /*top,right,bottom,left*/
+background: #f9f9f9;
+border-style:dotted;
+border-width:1px;
+border-color:#aaa;
+}
+/*-----------------------*/
+div.toc  {
+    margin:10px 10px 10px 10px;    /*top,right,bottom,left*/
+    padding:2px 5px 10px 2px;    /*top,right,bottom,left*/
+    background: #F8F9FA;
+    border: 1px solid #9E9E9E;
+    text-align: left;
+    /*float: left;*/
+    /*clear: left;*/
+}
+
+ul.toc,li.toc {
+    margin:0px 0px 0px 10px;    /*top,right,bottom,left*/
+    padding: 0;
+    font-family:arial;
+    font-size: 10pt;   /*10pt*/
+    font-weight:normal;
+    line-height: 1.5em;
+    list-style-type: square;
+    list-style-image: url('minidot.gif');
+}
+
+a.toc {
+    margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
+    font-family:tahoma, arial, sans-serif;
+    font-size: 100%; /*8pt*/
+    font-weight:normal;
+    color:  #0645AD;
+    text-decoration: none;
+    /*width: 100%;
+    float: left;
+    */
+}
+a.toc:hover  {
+    margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
+    font-family: tahoma, arial, sans-serif;
+    font-weight: normal;
+    color: #0645AD;
+    text-decoration: underline;
+}
+
+/*-----------------------*/
+
+table.wikicolumn {
+  padding: 10px 10px 10px 10px;/*top,right,bottom,left*/
+  margin: 1em 1em 1em 0;
+  background: #fff;
+  border: 1px #fff solid;
+}
+ 
+table.wikicolumn td {
+  vertical-align:top;
+  font-family:arial;
+  font-size:  10pt;
+  font-weight:normal;
+  border: 1px #fff solid;
+  padding: 10px;
+}
+
+/*-----------------------*/
+
+table.wikitable {
+  margin: 1em 1em 1em 0;
+  background: #f9f9f9;
+  border: 1px #aaa solid;
+  border-collapse: collapse;
+}
+ 
+table.wikitable th, table.wikitable td {
+  font-family:arial;
+  font-size:  10pt;
+  font-weight:normal;
+  border: 1px #aaa solid;
+  padding: 10px;
+}
+table.wikitable th {
+  background: #f2f2f2;
+  text-align: center;
+  font-weight: bold;
+}
+
+table.wikitable caption {
+  margin-left: inherit;
+  margin-right: inherit;
+  font-weight: bold;
+}
+/*-----------------------*/
+
+table.banner {
+width:100%;
+}
+
+td.banner_col1  {
+width:80%;
+border-style:none;
+}
+
+td.banner_col2  {
+font-size:  56pt;
+font-family: "Times New Roman","MS Serif", serif;
+width:20%;
+vertical-align:top;
+padding: 10px 10px 10px 10px;/*top,right,bottom,left*/
+}
+/*-----------------------*/
+
+div.logo {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    background-image: linear-gradient(to top, #F6F6F6, #FFFFFF, #FFFFFF);
+}
+
+div.headerline {
+    height: 20px;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 10px;
+    width: -webkit-calc(100% - 40px);
+    width:    -moz-calc(100% - 40px);
+    width:         calc(100% - 40px);
+}
+
+div.fotterline {
+    width: -webkit-calc(100% - 40px);
+    width:    -moz-calc(100% - 40px);
+    width:         calc(100% - 40px);
+    text-align: right;
+    font-size: 9pt;
+    padding: 20px;
+}
+
+table.sidebar_and_content {
+    width:99%;
+    margin: 0px 10px 0px 0px;  /*top,right,bottom,left*/
+    min-height: 100%;
+    min-width: 99%;
+}
+
+td.sidebar  {vertical-align:top;
+    margin: 10px 0 0 0;
+    background-color: #F6F6F6;
+}
+
+div.sidebar  {
+    width:  160px;
+    vertical-align:top;
+    padding: 12px 10px 10px 20px;/*top,right,bottom,left*/
+    margin: 0px 0px 0px 0px;  /*top,right,bottom,left*/
+}
+
+td.content  {
+    min-width: 100%;
+    border-bottom: solid 1px #A8DFF0;
+    border-left: solid 1px #A8DFF0;
+    font-size:  11pt;
+    font-family:arial;
+    width: 100%;
+    background-color: ffffff;
+    vertical-align:top;
+    padding: 4px 10px 10px 10px;/*top,right,bottom,left*/
+    margin: 4px 10px 10px 10px;  /*top,right,bottom,left*/
+    border-radius: 0 0 0 5px;
+}
+
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    padding: 10px 24px;
+    border-radius: 2px;
+    border: 1px solid #7BAFE2;
+    background-color: #509CE6;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+input[type=text] {
+    padding: 10px 10px;
+    border: 1px solid #D3E3EB;
+    border-radius: 4px;
+    width: 200px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=password] {
+    padding: 10px 10px;
+    border: 1px solid #D3E3EB;
+    border-radius: 4px;
+    width: 200px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+select, input[type=file] {
+    padding: 10px 10px;
+    border: 1px solid #D3E3EB;
+    border-radius: 4px;
+    width: 200px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+div.floatNotes {
+    display: inline-block;
+    float: right;
+    margin-top: 80px;
+    display: absolute;
+    width: 300px;
+    border: 1px solid #B4BBC8;
+    padding: 2px;
+    line-height: 1.4em;
+    margin-left: 10px;
+    background-color: #FFF
+}
+
+

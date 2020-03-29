@@ -1,0 +1,7 @@
+__NOTOC__
+===Special:Groups===
+
+This is the actual Groups page. Groups are single lines that start with a bullet and are delimited by one colon with commas between users. You should notice that this page is only editable by the SYSOP and CHGROUP members, although anyone can view it (you can add the private tag to prevent that). You should always have the admin part of every group otherwise the admin won't be able to edit that groups pages or view them if they are private.
+
+*SYSOP: admin
+*CHGROUP: admin, joe

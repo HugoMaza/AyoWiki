@@ -1,0 +1,35 @@
+This is text that we don't want the user to be able to edit. This is text that we don't want the user to be able to edit.
+
+===Header3===
+
+Notice that if not logged in it looks like any other page. If logged in without SYSOP privileges, there is no full page edit at top but only edits down the side.  If logged in as a SYSOP, full page edit also.
+
+Instructions: Enter a poem:
+<!--BEGINEDITSECTION-->Around and round she goes, where she stops, nobody knows.
+
+Transclusion of a page with edit sections does not affect original page editing.
+
+===Test===
+
+The End.
+<!--ENDEDITSECTION-->
+How many holes are there in Albert Hall?
+<!--BEGINEDITSECTION-->42
+
+Forty-two
+
+Four Tens and Two Ones
+<!--ENDEDITSECTION-->
+
+What did you do for summer vacation?
+<!--BEGINEDITSECTION-->
+Over the woods and through the hills...
+<!--ENDEDITSECTION-->
+
+===Header3===
+
+One, Two, Three Four
+
+This is the way we bake our bread.This is the way we bake our bread.This is the way we bake our bread.This is the way we bake our bread.This is the way we bake our bread.
+
+The End.

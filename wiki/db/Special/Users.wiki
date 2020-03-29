@@ -1,0 +1,7 @@
+__NOTOC__
+===Special:Users===
+
+This is the actual user account info page. Accounts are one line entries that start with a bullet and are double colon separated.  The format is username::PW:email. The password is crypted so you can't change it here; neither can you change the username here because the crypt uses the username. You can change the email or delete users if you like.  You probably want to put the < !--PRIVATE--> tag in this file.  '''The starting admin password is 'admin'.'''
+
+*admin::adpexzg3FUZAk::admin@ispassword
+*joe::jozXa4r5371Ps::joe@ispassword

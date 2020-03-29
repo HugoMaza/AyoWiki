@@ -1,0 +1,369 @@
+__BEGINBEFORETOC__
+
+{{{
+[[Image:camel.jpg|middle]]
+
+'''El pasaje estándar Lorem Ipsum, usado desde el año 1500'''
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+'''Sección 1.10.32 de "de Finibus Bonorum et Malorum", escrito por Cicero en el 45 antes de Cristo'''
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+}}}
+
+
+=Help=
+
+This is some content before TOC (Table of Content)
+
+__ENDBEFORETOC__
+
+
+==Wiki Pages==
+
+Wiki pages are constructed using "wiki text".  Wiki text is nothing more than a set of rules and special tags applied to your textural information so that the resulting web page has structure, format and style.
+
+
+===Basic Paragraph Formatting===
+
+Aside from tags (more about tags below), a paragraph is defined by adjacent "rows" of text which start in column zero (far left) of the edit box.  You should note that indents and carriage returns '''do not''' define a paragraph (as you will see, indents mean "pre-formatted" text and carriage returns are ignored).
+
+So how do you format for new paragraphs and separate single lines? You use a blank line.  A blank line in between a sentence or a group of adjacent sentences will delineate a new paragraph.
+
+
+==Creating a New Page==
+
+There are two ways to create a new page:
+
+1) Click on [../../cgi-bin/wiki/Find.cgi Find], select the Namespace you want to create the page within, and enter a new page name into the edit box. and hit return.
+
+2) Edit an existing page and place an [[Help#Internal Links|internal link]] with the name of your new page.  If you want to create the page in a separate namespace or within an existing namespace then simply include the namespace within the link. Then save the existing page and click on the link. You will be instructed to click on a link to create the new page.
+
+Example: [ [SandBox:MyNewPage] ]  creates [[Sandbox:MyNewPage]]
+
+
+==Namespaces==
+
+Pages (and images) can be located within a namespace. A namespace is really just a subdirectory which conveniently contains items that need to be administered, protected or managed together. There is only one level deep for namespaces.  The namespaces are prepended to the pagename with a colon - Namespace:Pagename   
+
+ =Header1=
+
+=Header1=
+
+Headers have to start at the left margin (indenting not allowed).
+
+ ==Header2==
+
+==Header2==
+
+ ===Header3===
+
+===Header3===
+
+ ====Header4====
+
+====Header4====
+
+ =====Header5=====
+=====Header5=====
+
+
+==Bold, Italics, Indenting, Bullets, Horizontal Rule==
+
+ ' ' ' Bold ' ' ' (without the spaces between 's)
+'''Bold''' 
+
+ ' ' 'g:Green Bold ' ' ' (without the spaces between 's)
+'''g:Green Bold''' 
+
+ ' ' 'r:Red Bold ' ' ' (without the spaces between 's)
+'''r:Green Bold''' 
+
+ ' ' 'b:Blue Bold ' ' ' (without the spaces between 's)
+'''b:Green Bold''' 
+
+
+ ' ' Italics ' '  (without the spaces between 's)
+''Italics''
+
+ :This is indented once.
+ ::This is indented more.
+ :::This is indented more. (limit 3)
+
+:This is indented once.
+::This is indented more.
+:::This is indented more.
+Indents have to start at the left margin (indenting not allowed).
+
+ *This is a bullet line.
+ **This is indented bullet line.
+ ***This is more intended bullet line.(limit 3)
+
+*This is a bullet line.
+**This is indented bullet line.
+***This is more intended bullet line.
+Bullets have to start at the left margin (indenting not allowed).
+
+ ----    (horizontal rule)
+----
+Rules have to start at the left margin (indenting not allowed).
+
+
+==Tables==
+
+ {|
+ |-
+ ! Col1
+ ! Col2
+ ! Col3
+ |-
+ |data
+ |data
+ |data
+ |-
+ |data
+ |data
+ |data
+ |}
+
+Table elements have to start at the left margin (indenting not allowed).
+
+{|
+|-
+! Col1
+! Col2
+! Col3
+|-
+|data
+|data
+|data
+|-
+|data
+|data
+|data
+|}
+
+
+==Columns==
+
+Unlike Tables which formally display partitioned data, Columns are for structural layout of page content.  You don't see columns, you only see the information which they act upon.  They are a simple mechanism for grouping content.  The commands which follow must start on the left edge of the page and are surrounded by 2 underbars on each side.
+
+ __BEGINCOLUMNS__
+
+The command above starts a set of columns and creates the first column.
+
+ __ANOTHERCOLUMN__
+
+The command above adds a second, third, ... column.
+
+  __ENDCOLUMNS__
+
+The command above wraps up the layout. Content which follows returns to a regular wiki top down format.
+
+__BEGINCOLUMNS__
+This is column 1 text. Sally sell seashells by the seashore.
+__ANOTHERCOLUMN__
+This is column 2 text. Sally sell seashells by the seashore.
+__ANOTHERCOLUMN__
+This is column 3 text. Sally sell seashells by the seashore.
+__ANOTHERCOLUMN__
+This is column 4 text. Sally sell seashells by the seashore.
+__ENDCOLUMNS__
+
+
+==Images==
+
+ [ [ Image:camel.jpg ] ]
+
+You can use an option |left or |right after camel.jpg and it will float the picture and allow text to wrap. (Doesn't work with preformatted text like we have here.)
+
+[[Image:camel.jpg]]
+
+Images by default should be placed in the Images directory, however this is not required. You can put images in any directory and specify this within the tag.
+
+For example if you have an image in a Cartoons [[Help#Namespaces|namespace]] (directory) then you would specify like this: [ [Image:Cartoons:mickey.jpg] ].  You can think of "Image:" as an object type identifier.
+
+===Images alignment===
+
+Left alignment:
+
+ [ [ Image:Image:camel.jpg|left ] ]
+
+Right alignment:
+
+ [ [ Image:Image:camel.jpg|right ] ]
+
+Or Middle alignment:
+
+ [ [ Image:Image:camel.jpg|middle ] ]
+
+Example middle alignment:
+
+[[Image:camel.jpg|middle]]
+
+===Images sizing===
+
+We can control the image size using a third argument:
+
+ [ [ Image:Image:camel.jpg|middle|100 ] ]
+
+Sizing image example (just 100px):
+
+[[Image:camel.jpg|middle|100]]
+
+
+==Documents==
+
+Documents can be uploaded to created [[Help#Namespaces|namespaces]] (subdirectories) but can not be uploaded to Main nor Images namespace.  Create document links like this:
+
+ [ [ Doc:namespace:filename ] ]
+
+Example: [ [ Doc:Sandbox:pdftest.pdf ] ]    [[Doc:Sandbox:pdftest.pdf]]
+
+Unlike Images, there is no default Doc directory.  "Doc:" is strictly an object type identifier. The [[Help#Namespaces|namespace]] is required with this tag.
+
+
+
+==Internal Links==
+
+Internal links are created using a double bracket notation with an optional name deliminated by a bar. Refer to the following format examples:
+
+ [ [ Help|This way for help ] ]
+
+[[Help|This way for help]]
+
+ [ [ Help ] ]
+
+[[Help]]
+
+If you want to link to a particular section (as defined by use of a header) within a wiki page, then you can append the section name (exactly including case) to the wiki pagename with #.  
+
+ [ [ Help#Namespaces|My Link to Namespaces in Help ] ]
+ 
+[[Help#Namespaces|My Link to Namespaces in Help]]
+
+
+==External Links==
+
+External links are created using a single bracket notation with an optional name deliminated by a space. Obviously, the URL can not have any spaces (use %20 if necessary):
+
+ [ http://www.google.com ]
+
+[http://www.google.com]
+
+ [ http://www.google.com My Favorite Search Engine ]
+
+[http://www.google.com My Favorite Search Engine]
+
+
+
+==Transclusion==
+
+WikiLite has 2 types of builtin transclusions:
+
+ { { Pagename } }
+ { { Pagename|StartHeader|EndHeader } }
+
+The first version transcludes the entire page at the point of the tag. The second one is a sectional transclude. The StartHeader is included but the EndHeader is not.  In both examples the braces and adjacent (no spaces) and if any of the terms have parenthesis, the parenthesis must be escaped [ \( ].
+
+For transcluding pages in namespaces just use Namespace:Pagename for Pagename.
+
+ { { Namespace:Pagename|StartHeader|EndHeader } }
+
+
+==Collapsible Sections==
+
+Collapsible sections can be added around any text with two built in tags: 
+_BEGINCSECTION_ and _ENDCSECTION_. Note: the actual tags have TWO underscores per side.
+
+__BEGINCSECTION__
+This is text that the reader probably doesn't want to see all the time.
+__ENDCSECTION__
+
+
+==Table of Contents==
+
+A table of contents is by default, always generated for the page based on the header levels and text.  The user can prevent this from happening by putting a _NOTOC_ tag in the wiki text. Note: the actual tag has TWO underscores per side.
+
+
+==Content before Table of Contents==
+
+You can put some content before Table of Content using the next tags at start of the text, before TOC:
+
+ _ _ BEGINBEFORETOC _ _ 
+
+Content before TOC
+
+ _ _ ENDBEFORETOC _ _
+
+(Without spaces inside the tag)
+
+
+==Permissions and Protection==
+
+
+===User Accounts===
+
+Users who need to edit can be set up with accounts.  The permissions that a user has to edit pages is dependent upon the wiki setup. Users can be allowed to create accounts themselves or only through the admin. Pages may have restricted editing or viewing to a user by way of group permissions, namespace protection or making the page private.
+
+*[[Special:Users]] (note: this page may not be viewable to you as a user)
+
+
+
+===Group Permissions===
+
+Pages can be set up with group permissions so that only users who are members of a group can edit the page.  Multiple groups can be assigned to a page but the group "tags" must be placed only one per line.  
+
+ < !--GROUP:Alchemists--> ''(simply an HTML comment. No spaces.)''
+
+*[[Special:Groups]]
+
+
+===Namespace Protection===
+
+Namespace protection takes the opposite strategy as groups. Groups use tags which the user puts on individual pages. Namespace protection on the other hand, defines a list of users which are allowed to edit within the entire namespace. Therefore, with this scheme, no tags are necessary - but it applies to the whole namespace. Group tags do have precedent over the namespaces protection, so you can further restrict protected namespace pages to a specific group. So even if you are a member of a namespace , you may be denied if a page specifies a group you are not a member of. 
+
+*[[Special:Namespaces]]
+
+
+===Private Pages===
+
+Pages can be setup up so that they can only be viewed by a group or groups.
+If the private tag < !--PRIVATE--> is put on the page along with one or more < !--GROUP:#####--> tags then public viewers can not see the page.  Group tags are required for this functionality to work.
+
+
+==Customizing the Sidebar(Menu) Per Page==
+
+The Sidebar is a wiki page which is located in the Skin namespace. The setup of the Sidebar is done by the administrator along with the rest of the Skin. It is the default menu displayed.
+
+However, the user can create their own Sidebar menu on a per page basis by using the _BEGINSIDEBAR__ and _ENDSIDEBAR__ (2 underscores on either side) tags by themselves at the beginning of a new line on the wiki page.  The content of the sidebar is then placed between these tags.
+
+The content of the side bar is simple: Use level 5 headers for section dividers and use bulleted links for the menu items.
+
+ _BEGINSIDEBAR__
+ =====Menu=====
+ *[ [MyPage]]
+ *[ http://www.google.com My Search]
+ =====Weather=====
+ *[ http://www.weather.com My Weather]
+ _ENDSIDEBAR__
+
+
+==Restricted Editable Content Per Page==
+
+This is a SYSOP level function that allows only parts of the wiki page to be edited by a user.  By using the < !--BEGINEDITSECTION--> and < !--ENDEDITSECTION--> comment tags by themselves on a line at the beginning of a new line, the regular full page and default heading editing mode is disabled for users and the only parts editable are the special edit sections.  These edit sections have their own (edit) links on the right side of the page. Editing is still subject to all other permissions. Transclusion of a page with edit sections does not affect original page editing.
+
+ I don't want users to edit this text.
+ < !--BEGINEDITSECTION-->
+ Users may edit this text.
+ < !--ENDEDITSECTION-->
+ Nor do I want users to edit this text.
+ < !--BEGINEDITSECTION-->
+ Users may edit this text.
+ < !--ENDEDITSECTION-->
+
+'''r:Please Note:''' Yes it is possible for a non-SYSOP user to insert these tags into their page. The tags '''r:will''' be active upon saving and the non-SYSOP user will then only be able to edit the editable sections and require assistance from a SYSOP to undo the tags.
+
+----
+''The End''

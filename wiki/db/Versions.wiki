@@ -1,0 +1,95 @@
+__BEGINBEFORETOC__
+=Versioning and Changelog=
+__ENDBEFORETOC__
+
+==To Do==
+**Support for several languages
+**Ability to change themes (look and feel)
+**Images on descriptive page
+**Email notification for page changes.
+
+==Changelog==
+
+====Version 0.7.0 (current)====
+*[x] Images can be aligned to right, middle or left
+*[x] We can now insert https links
+*[x] All external links are open in a new window
+*[x] We can add all content we want before TOC. [[Help#Content%20before%20Table%20of%20Contents]]
+*[x] Modern Look and feel.
+*[x] Directory tree was changed to easy install. Just copy and paste, and you can start to work
+*[x] Easy to use  Wiki Text editor
+*[x] Right float notes was added
+
+==Legacy Changes==
+AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, slightly improved and adapted to install and work easiest.
+
+====Version 0.6.3====
+*[x] Default edit links for each header level 1-4 (defeated by user edit sections).
+*[x] Fixed bug with section editing.
+*[x] Fixed paragraph behavior after header.
+====Version 0.6.4====
+*[x] Email password reset notification.
+*[x] Email notification on account changes and new accounts.
+
+====Version 0.6.2====
+*[x] Document uploading and linking. [[Help#Documents]]
+*[x] Custom sidebar menu per page.   [[Help#Customizing the Sidebar(Menu) Per Page]]
+*[x] Editable page sections (SYSOP function).[[Help#Restricted Editable Content Per Page]]
+*[x] Red,green,blue bold options added. [[Help#Bold, Italics, Indenting, Bullets, Horizontal Rule]]
+
+====Version 0.6.1====
+*[x] Bugfix: Error when rendering the 2 styles of Doc links or Internal Links on same line.
+*[x] Non-functional: Moved Sandbox to its own directory, replaced big pdf test file with small one.
+*[x] Non-functional: Updated Help page.
+
+====Version 0.6.0====
+*[x] Ability to upload documents as well as images and link to them.
+
+====Version 0.5.9====
+*[x] Search page and functionality.
+
+====Version 0.5.8====
+*[x] Bugfix: CRNL and a final NL were showing up in wiki files. Found out that even though binmode is used, textarea uses CRNL as separator even in multipart enc. Remove CRs before saving. Extra NL at end caused by revision tag NL insertion but when stripping, didn't strip out NL. Fixed.
+*[x] Upload page for images, etc.
+
+====Version 0.5.6.1====
+*[x] Added Namespace protection system.
+*[x] removed hr from code for headers1-3 and use CSS to produce underlines.
+*[x] Bugfix: putting 2 images on same line produced rendering error. Made RE non-greedy.
+
+====Version 0.5.5====
+*[x] Fixed bug with transcluded namespace:page
+*[x] Namespace listings - Find
+
+====Version 0.5.4====
+*[x] Admin create account even when public can not.
+*[x] Account form validation.
+*[x] Private tag for making pages not viewable unless logged in and member of the specified group.
+*[x] Changed user account and group page format for normal wiki viewing.
+
+====Version 0.5.3====
+*[x] Data collision on simultaneous page edits implementation.
+*[x] Bug fixes.
+
+====Version 0.5.2====
+*[x] Fixed external and internal links on same line bug.
+*[x] Fixed external and email link icon bug.
+*[x] Old page saving (history)
+*[x] Namespace file handling routines (Namespace:Pagename)
+*[x] css conditional styles replacing conditional source code (cleanup&simpli)
+*[x] Page version comparison functionality.
+
+====Version 0.5.1====
+*[x] Created template system.
+*[x] Created default Skin.
+
+====Version 0.5.0====
+*[x] Added anchors to headers in html generation.
+*[x] Implemented login/logout and sessions.
+*[x] Implemented table of contents functionality.
+*[x] Implemented group rights access on pages.
+*[x] Moved login menu.
+*[x] Cleaned up dependencies, make strict and require fully qualified external references.
+*[x] Fixed bold bug and italics bug.
+*[x] Fixed update account bug w/respect to bad cookies.
+*[x] Finalized table implementation.

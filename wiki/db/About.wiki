@@ -1,0 +1,25 @@
+__NOTOC__
+==About==
+[[Image:logo1.png|right]]
+
+AyoWiki is GitHub hosted Project:
+
+[https://github.com/HugoMaza/AyoWiki https://github.com/HugoMaza/AyoWiki]
+
+AyoWiki is an Open Source project under the [[GPL|GNU General Public License]] from [http://www.gnu.org/ www.gnu.org] . It is designed to use minimal system requirements and provide functional compatibility with Mediawiki wiki text.
+
+'''System Requirements:'''
+*An Apache web server (or any server that handles CGI and Perl).
+*Perl (standard distribution, no additional modules necessary)
+*No database is required
+
+'''Borrowed Components:'''
+*Algorithm::Diff
+:AyoWiki uses an embedded version of the Perl Module Algorithm::Diff. 
+
+AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, slightly improved and adapted to install and work easiest.
+
+
+----
+----
+
