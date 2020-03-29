@@ -18,6 +18,6 @@ Easy to use Wiki
 
 AyuWiki has an easy to use wiki editor:
 
-[![AyoWiki Wiki editor](https://ayowiki.org/wiki/db/Image/Ayowikiscrsh1.png "AyoWiki Wiki-editor")]
+![AyoWiki Wiki editor](https://ayowiki.org/wiki/db/Image/Ayowikiscrsh1.png "AyoWiki Wiki-editor")
 
 ----
