@@ -40,8 +40,7 @@ ul,li,ol,dl,dd {
     font-weight:normal;
     line-height: 1.5em;
     list-style-type: none;
-    /*list-style-type: square;
-    list-style-image: url('minidot.gif');*/
+    /*list-style-image: url('minidot.gif');*/
 }
 
 
@@ -100,7 +99,7 @@ h4 {
     padding: 8px 0px 0px 0px;   /*top,right,bottom,left*/
     font-weight:normal;
     color: #232323;
-    font-size:  14pt;
+    font-size:  14.5pt;
     font-family:arial;
 }
 
@@ -137,12 +136,12 @@ margin: .2em 0 .2em 0;
 
 
 img  {
-border-style: none;
-border-width:1px;
-border-color:#ddd;
-margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
-padding: 0px 0px 0px 0px;/*top,right,bottom,left*/
-
+    border-style: none;
+    border-width:1px;
+    border-color:#ddd;
+    margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
+    padding: 0px 0px 0px 0px;/*top,right,bottom,left*/
+    max-width: 98%;
 }
 
 #lockimage  {
@@ -232,8 +231,9 @@ div.editsection  {
  */
 
 #sidebar ul,#sidebar li {
-    margin: -6px 0px -6px 0px;    /*top,right,bottom,left*/
-    padding: 0;
+    margin: -1px 0 -1px 10px;    /*top,right,bottom,left  5px 0 5px 10px;  -6px 0 -6px 0px;*/
+    line-height: 1.2em;
+	list-style: none;
 }
 
 #sidebar a, #sidebar h5 
@@ -254,17 +254,24 @@ div.editsection  {
     text-decoration:underline;
 }
 
-#sidebar h5 
-{
-    margin: 0px 0px 10px 0px;   /*top,right,bottom,left*/
-    font-weight:bold;
-    color:  #282828;
+#sidebar h5 {
+    margin: 0px 0px -6px 0px;   /*top,right,bottom,left*/
+    padding-left: 20px;
+    padding-bottom: 0px;
+    font-weight: normal;
+    color: #282828;
     background-color: 0e74c0;
     font-family:arial;
     font-style:normal;  /* override italic */
-    text-align: center
 }
 
+#sidebar hr {
+    background-image: linear-gradient(to right, #F6F6F6, #BFBFBF, #F6F6F6);
+    border: 0;
+    height: 1px;
+    margin: 0 20px 0 10px;   /*top,right,bottom,left*/
+    padding: 0 20px 0 10px;
+}
 
 
 /*--------SESSION MENU---------------*/
@@ -320,24 +327,28 @@ border-color:#aaa;
 }
 /*-----------------------*/
 div.toc  {
-    margin:10px 10px 10px 10px;    /*top,right,bottom,left*/
-    padding:2px 5px 10px 2px;    /*top,right,bottom,left*/
+    margin:10px 10px 10px 1px;    /*top,right,bottom,left*/
+    padding:2px 15px 10px 0px;    /*top,right,bottom,left*/
     background: #F8F9FA;
     border: 1px solid #9E9E9E;
+    text-indent: -20px;
     text-align: left;
     /*float: left;*/
     /*clear: left;*/
 }
 
 ul.toc,li.toc {
-    margin:0px 0px 0px 10px;    /*top,right,bottom,left*/
+    margin:0px 0px 0px 15px;    /*top,right,bottom,left*/
     padding: 0;
     font-family:arial;
     font-size: 10pt;   /*10pt*/
     font-weight:normal;
-    line-height: 1.5em;
+    line-height: 1.6em;
+    list-style-type: none;
+/*
     list-style-type: square;
     list-style-image: url('minidot.gif');
+*/
 }
 
 a.toc {
@@ -463,9 +474,9 @@ td.sidebar  {vertical-align:top;
 }
 
 div.sidebar  {
-    width:  160px;
+    width:  180px;
     vertical-align:top;
-    padding: 12px 10px 10px 20px;/*top,right,bottom,left*/
+    padding: 12px 10px 10px 0px;/*top,right,bottom,left*/
     margin: 0px 0px 0px 0px;  /*top,right,bottom,left*/
 }
 
@@ -533,7 +544,7 @@ div.floatNotes {
     display: absolute;
     width: 300px;
     border: 1px solid #B4BBC8;
-    padding: 2px;
+    padding: 5px 2px 3px 2px;
     line-height: 1.4em;
     margin-left: 10px;
     background-color: #FFF

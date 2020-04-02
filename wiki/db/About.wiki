@@ -17,7 +17,7 @@ AyoWiki is an Open Source project under the [[GPL|GNU General Public License]] f
 *Algorithm::Diff
 :AyoWiki uses an embedded version of the Perl Module Algorithm::Diff. 
 
-AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, slightly improved and adapted to install and work easiest.
+AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, considerably improved and adapted to install and work easiest.
 
 
 ----

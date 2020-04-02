@@ -174,9 +174,9 @@ sub Wiki2Html
     }
 
     # Bullets (can't cross lines)
-    $line =~ s/^\*\*\*(.*)/<ul><ul><ul><li>$1<\/ul><\/ul><\/ul>/g;
-    $line =~ s/^\*\*(.*)/<ul><ul><li>$1<\/ul><\/ul>/g;
-    $line =~ s/^\*(.*)/<ul><li>$1<\/ul>/g;
+    $line =~ s/^\*\*\*(.*)/<ul><ul><ul><li>$1<\/li><\/ul><\/ul><\/ul>/g;
+    $line =~ s/^\*\*(.*)/<ul><ul><li>$1<\/li><\/ul><\/ul>/g;
+    $line =~ s/^\*(.*)/<ul><li>$1<\/li><\/ul>/g;
 
     # Indenting (can't cross lines)
     $line =~ s/^:::(.*)/<dl><dd><dl><dd><dl><dd>$1<\/dd><\/dl><\/dd><\/dl><\/dd><\/dl>/g;
@@ -259,12 +259,15 @@ sub Wiki2Html
     {
       if($preformat_flag==0)   #if this is first time through...
       {
-        $line =~ s/^\s+(\S+)/<pre>$1/g; #grab text prepended with <pre> tag
+        # $line =~ s/^\s+(\S+)/<pre>$1/g; #grab text prepended with <pre> tag
+        $line =~ s/^\s(.+)/<pre>$1/g; #grab text prepended with <pre> tag
+        
         $preformat_flag=1;              #set flag
       }
       else
       {
-        $line =~ s/^\s+(\S+)/$1/g;  #if additional indented lines, just grab text.
+        # $line =~ s/^\s+(\S+)/$1/g;  #if additional indented lines, just grab text.
+        $line =~ s/^\s(.+)/$1/g;  #if additional indented lines, just grab text.
       }
     }
     elsif($preformat_flag==1) #if line with text begins at beginning (no spaces) and flag is set.
@@ -537,6 +540,12 @@ sub TableOfContents
      my @wiki_lines = split(/\n/,$html_page);
      my $line;
      my @toc = ();
+     
+my @id;
+my $before2;
+my $before3;
+my $before4;
+my $before5;
      foreach $line (@wiki_lines)
      {
        if($line =~ m/<!--BEGINSIDEBAR-->/) { $not_inside_sidebar_code=0;}
@@ -547,7 +556,60 @@ sub TableOfContents
          if($line =~ m/<h[12345]>.*?<\/h[12345]>/)
          {
            # x = string repetition operator!
-           $line =~ s/.*?<h([12345])>(.*?)<\/h[12345]>.*/"<ul class='toc'>"x$1."<li class='toc'>"."\n<a class='toc' href='#".$2."'>".$2."<\/a>\n"."<\/li>"."<\/ul>"x$1/e;
+           # $line =~ s/.*?<h([12345])>(.*?)<\/h[12345]>.*/"<ul class='toc'>"x$1."<li class='toc'>"."\n<a class='toc' href='#".$2."'>".$2."<\/a>\n"."<\/li>"."<\/ul>"x$1/e;
+           
+           $line =~ /.*?<h([12345])>.*?<\/h[12345]>.*/;
+           my $h = $1;
+           
+           $id[1] ++ if $h == 1;
+           
+           my $idx;
+           my $parent;
+           
+           if ( $h == 2 ) {
+               $parent = $id[1];
+               if ( $parent eq $before2 ) {
+                   $id[2] ++;
+               } else {
+                   $id[2] = 1;
+               }
+               $before2 = $parent;
+           }
+           if ( $h == 3 ) {
+               $parent = $id[1] .'.'. $id[2];
+               if ( $parent eq $before3 ) {
+                   $id[3] ++;
+               } else {
+                   $id[3] = 1;
+               }
+               $before3 = $parent;
+           }
+           if ( $h == 4 ) {
+               $parent = $id[1] .'.'. $id[2] .'.'. $id[3];
+               if ( $parent eq $before4 ) {
+                   $id[4] ++;
+               } else {
+                   $id[4] = 1;
+               }
+               $before4 = $parent;
+           }
+           if ( $h == 5 ) {
+               $parent = $id[1] .'.'. $id[2] .'.'. $id[3] .'.'. $id[4];
+               if ( $parent eq $before5 ) {
+                   $id[5] ++;
+               } else {
+                   $id[5] = 1;
+               }
+               $before5 = $parent;
+           }
+           # $idx = $id[$h] . '. ';     # if we want to have just the last number as index
+           for my $i ( 1 .. $h ) {
+               $idx .= $id[$i] . '.' if $id[$i];
+           }
+           $idx =~ s/\.$/ /;
+           
+           $line =~ s/.*?<h([12345])>(.*?)<\/h[12345]>.*/"<ul class='toc'>"x$1."<li class='toc'>$idx"."\n<a class='toc' href='#".$2."'>".$2."<\/a>\n"."<\/li>"."<\/ul>"x$1/e;
+           
            push @toc, "$line";
          }
        }

@@ -23,7 +23,7 @@ use strict;
 # This file contains configuration settings used by the application.
 
 our $WikiSiteCgiUrl      = "http://localhost/wiki"; # no trailing slash.
-our $WikiSiteTitle       = "AyoWiki";
+our $WikiSiteTitle       = "AyoWiki - Easy Wiki";
 our $AdminEmail          = "admin\@localhost";  # used for replies to system emails. WARNING @ must be escaped!: \@
 our $SkinDir             = "db/Skin";
 our $SidebarPageName     = "Skin:Sidebar";

@@ -10,7 +10,17 @@ __ENDBEFORETOC__
 
 ==Changelog==
 
-====Version 0.7.0 (current)====
+====Version 0.7.1 (current)====
+=====Fixed=====
+*[x] Initial spaces bug correction in PRE tag
+*[x] Fix a template error
+=====Added=====
+*[x] Index numbering
+=====Changed=====
+*[x] Sidebar style
+
+====Version 0.7.0====
+=====Added=====
 *[x] Images can be aligned to right, middle or left
 *[x] We can now insert https links
 *[x] All external links are open in a new window
@@ -21,7 +31,7 @@ __ENDBEFORETOC__
 *[x] Right float notes was added
 
 ==Legacy Changes==
-AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, slightly improved and adapted to install and work easiest.
+AyoWiki was initially based on [https://sourceforge.net/projects/wikilean/ WikiLean 0.6.4.1] but, considerably improved and adapted to install and work easiest.
 
 ====Version 0.6.3====
 *[x] Default edit links for each header level 1-4 (defeated by user edit sections).
