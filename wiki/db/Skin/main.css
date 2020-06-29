@@ -118,8 +118,8 @@ pre {
     margin: 10px 30px 10px 30px;    /*top,right,bottom,left*/
     padding: 10px;    /*top,right,bottom,left*/
     font-weight:normal;
-    font-size:  100%;
-    color:  #282828;
+    font-size:  9pt;
+    color:  #2C8589;
     background-color: F8F8F8;
     border: 1px dashed #1E90FF;
     white-space: pre-wrap;
@@ -232,7 +232,7 @@ div.editsection  {
 
 #sidebar ul,#sidebar li {
     margin: -1px 0 -1px 10px;    /*top,right,bottom,left  5px 0 5px 10px;  -6px 0 -6px 0px;*/
-    line-height: 1.2em;
+    line-height: 1.5em;
 	list-style: none;
 }
 
@@ -386,6 +386,7 @@ table.wikicolumn td {
   font-weight:normal;
   border: 1px #fff solid;
   padding: 10px;
+    width: 25%;
 }
 
 /*-----------------------*/
@@ -444,15 +445,17 @@ div.logo {
 
 div.headerline {
     height: 20px;
+    font-size: 10pt;
     width: 100%;
     text-align: right;
     padding-bottom: 10px;
     width: -webkit-calc(100% - 40px);
     width:    -moz-calc(100% - 40px);
     width:         calc(100% - 40px);
+    background-color: #FFFFFF;
 }
 
-div.fotterline {
+div.footerline {
     width: -webkit-calc(100% - 40px);
     width:    -moz-calc(100% - 40px);
     width:         calc(100% - 40px);
@@ -471,6 +474,7 @@ table.sidebar_and_content {
 td.sidebar  {vertical-align:top;
     margin: 10px 0 0 0;
     background-color: #F6F6F6;
+    font-size: 10pt;
 }
 
 div.sidebar  {
@@ -541,13 +545,35 @@ div.floatNotes {
     display: inline-block;
     float: right;
     margin-top: 80px;
+    margin-left: 10px;
     display: absolute;
     width: 300px;
     border: 1px solid #B4BBC8;
-    padding: 5px 2px 3px 2px;
+    /*padding: 1px -10px 1px 1px;  top,right,bottom,left*/
     line-height: 1.4em;
-    margin-left: 10px;
-    background-color: #FFF
+    background-color: #FFFFFF;
 }
 
+div.floatNotes h5 {
+    background-color: #8DB1C3;
+    padding: 6px 2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 4px;    /*top,right,bottom,left*/
+}
 
+input.search {
+    height: 24px;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    color: #000000;
+    border: 1px solid #BFBFBF;
+    background-image: url('images/searchicon.png');
+    background-size: 16px 16px;
+    background-position: 4px 4px; 
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-top: 6px;
+    padding-left: 22px;
+}

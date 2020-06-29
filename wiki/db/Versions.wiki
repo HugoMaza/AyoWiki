@@ -10,7 +10,12 @@ __ENDBEFORETOC__
 
 ==Changelog==
 
-====Version 0.7.1 (current)====
+====Version 0.7.2 (current)====
+=====Fixed=====
+*[x] Correction for local libs to work on RHEL 8 and other newest Linux Distros
+*[x] Fix for regex with braces "{" for the newest Perl versions
+
+====Version 0.7.1====
 =====Fixed=====
 *[x] Initial spaces bug correction in PRE tag
 *[x] Fix a template error

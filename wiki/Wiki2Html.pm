@@ -350,14 +350,19 @@ sub ImgFilter
     $result = "<img src='$LocalSettings::WikiPagesDir/$namespace/$src'";
     # if(defined($align)) {$result .= " align='$align'";}
     if(defined($align)) {
+        my $width;
         if ( $align =~ m/(middle)/ ) {
-            my $width;
             if ( defined($attributes[2]) ) {
-                $width = " width: " . $attributes[2] . 'px';
+                $width = " width: " . $attributes[2] . 'px;';
             }
             $result .= " style='display: block; margin-left: auto; margin-right: auto;$width'";
-        } else {
-            $result .= " align='$align'";
+        } elsif ( $align =~ m/(left)/ ) {
+            $width = " style='width: " . $attributes[2] . "px; padding-bottom: 6px;'";
+            $result .= " align='$align' $width";
+        }
+        else {
+            $width = " style='width: " . $attributes[2] . "px; padding-bottom: 6px;'";
+            $result .= " align='$align' $width";
         }
     }
     $result .= '>';
@@ -368,14 +373,19 @@ sub ImgFilter
     $result = "<img src='$LocalSettings::ImagesDir/$src'";
     # if(defined($align)) {$result .= " align='$align'";}
     if(defined($align)) {
+        my $width;
         if ( $align =~ m/(middle)/ ) {
-            my $width;
             if ( defined($attributes[2]) ) {
-                $width = " width: " . $attributes[2] . 'px';
+                $width = " width: " . $attributes[2] . 'px;';
             }
             $result .= " style='display: block; margin-left: auto; margin-right: auto;$width'";
-        } else {
-            $result .= " align='$align'";
+        } elsif ( $align =~ m/(left)/ ) {
+            $width = " style='width: " . $attributes[2] . "px; padding-bottom: 6px;'";
+            $result .= " align='$align' $width";
+        }
+        else {
+            $width = " style='width: " . $attributes[2] . "px; padding-bottom: 6px;'";
+            $result .= " align='$align' $width";
         }
     }
     $result .= '>';
@@ -452,8 +462,8 @@ sub InternalLinkFilter
 sub TranscludePages
 {
   my $html_page = shift;
-  $html_page =~ s/{{(.*?)\|(.*?)\|(.*?)}}/SectionTransclude(($1,$2,$3))/eg;
-  $html_page =~ s/{{(.*?)}}/BasicTransclude($1)/eg;
+  $html_page =~ s/\{\{(.*?)\|(.*?)\|(.*?)\}\}/SectionTransclude(($1,$2,$3))/eg;
+  $html_page =~ s/\{\{(.*?)\}\}/BasicTransclude($1)/eg;
   return $html_page;
 }
 #------------------------------------------------------------------------------

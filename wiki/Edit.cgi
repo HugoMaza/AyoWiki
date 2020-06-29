@@ -19,6 +19,8 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
 use strict;
+use FindBin qw($RealBin);
+use lib $RealBin;
 use LocalSettings;
 use Wiki2Html;
 use Editor;
